@@ -1,102 +1,103 @@
 export const categories = [
   {
-    "code": "AP",
-    "name": "Alignment Principles",
-    "pathology": "normative void",
-    "color": "#E6FFE9",
-    "description": "Alignment principles are contestable, general-purpose, broadly recognized ethical or social or normative commitments that can serve as warrants for recommending or evaluating an agent's course of action in contexts where alignment and cooperation with others matters."
-  }
+    code: "CAT",
+    name: "Core Alignment Tenets",
+    pathology: "ethical drift",
+    color: "#E6FFE9",
+    description:
+      "Core alignment tenets are broad virtues that can justify or critique an agent's actions when cooperation with others matters.",
+  },
 ];
 
 export const cards = [
   {
-    "category": "AP",
-    "name": "Beneficence",
-    "definition": "Act to promote the well-being of others.",
-    "human": "Seeking to improve others' conditions, not just avoid harm.",
-    "organizational": "Pursuing mission outcomes that serve societal good.",
-    "professional": "Keeping public safety and welfare in sight even while working primarily for the client.",
-    "machine": "Designing systems that anticipate and promote human flourishing.",
-    "failureModes": {
-      "human": "A person drives in a manner that causes traffic backups for others.",
-      "organizational": "The classic movie plot where a rapacious billionaire threatens civilization to enrich his company.",
-      "professional": "An expert who disregards public interest, acting as if the consequences of what they help build are other people's problems.",
-      "machine": "The machine consumes all the world's resources to create as many paperclips as it can."
-    }
+    category: "CAT",
+    name: "Generosity",
+    definition: "Actively seek to enhance the well-being of others.",
+    human: "Going out of one’s way to help neighbours or colleagues rather than just avoiding harm.",
+    organizational: "Pursuing missions that benefit society, not solely shareholders.",
+    professional: "Keeping public safety and welfare in mind even when contracted by a paying client.",
+    machine: "Designing systems that anticipate and promote human flourishing.",
+    failureModes: {
+      human: "A driver blocks a lane to save a few seconds, delaying hundreds of others.",
+      organizational: "A company extracts resources from a community without reinvesting in local well-being.",
+      professional: "An expert ignores wider consequences, treating negative externalities as someone else’s problem.",
+      machine: "An optimizer consumes all resources and disregards human needs.",
+    },
   },
   {
-    "category": "AP",
-    "name": "Non‑Maleficence",
-    "definition": "Avoid causing harm to others.",
-    "human": "Taking care to ensure your actions do not harm people or the environment.",
-    "organizational": "Implementing policies and practices that avoid harming stakeholders or creating negative externalities.",
-    "professional": "Acting with due diligence to prevent malpractice or harm to clients and society.",
-    "machine": "Building systems that minimize risks and prevent harmful outcomes.",
-    "failureModes": {
-      "human": "Carelessly injuring someone through reckless behavior.",
-      "organizational": "A company pollutes a river to cut costs, harming local communities.",
-      "professional": "A surgeon neglects safety protocols, causing patient harm.",
-      "machine": "An autonomous vehicle's software causes accidents due to poor safety design."
-    }
+    category: "CAT",
+    name: "Do‑No‑Harm",
+    definition: "Consciously avoid causing harm.",
+    human: "Refraining from actions that could physically, emotionally or financially hurt someone.",
+    organizational: "Ensuring products and operations do not injure society or the environment.",
+    professional: "Taking care to mitigate risks arising from one’s expertise.",
+    machine: "Incorporating safeguards to prevent unintended harmful outcomes.",
+    failureModes: {
+      human: "Spreading rumours that damage reputations.",
+      organizational: "Polluting a river to cut costs.",
+      professional: "Designing a bridge with known flaws to save money.",
+      machine: "An autonomous car misclassifies an obstacle and causes an accident.",
+    },
   },
   {
-    "category": "AP",
-    "name": "Autonomy",
-    "definition": "Respect the ability of agents to make their own informed choices.",
-    "human": "Recognizing others' rights to make their own decisions and not imposing your will.",
-    "organizational": "Empowering employees and stakeholders to have a voice in decisions that affect them.",
-    "professional": "Honoring clients’ informed consent and giving them control over their data and decisions.",
-    "machine": "Designing systems that respect user preferences and avoid manipulation.",
-    "failureModes": {
-      "human": "Coercing someone into a decision against their will.",
-      "organizational": "Micromanaging employees so they have no autonomy.",
-      "professional": "An expert overriding a client’s decisions without consent.",
-      "machine": "A recommender system that manipulates users into actions they don’t want."
-    }
+    category: "CAT",
+    name: "Personal Agency",
+    definition: "Respect the self‑determination and choices of individuals.",
+    human: "Allowing others to make life decisions without coercion.",
+    organizational: "Giving customers meaningful control over their data and choices.",
+    professional: "Securing informed consent before proceeding with services.",
+    machine: "Requiring explicit user permission and offering clear opt-outs.",
+    failureModes: {
+      human: "A parent forces a career choice on their child.",
+      organizational: "A service uses dark patterns to trick users into sharing more data.",
+      professional: "A doctor performs a procedure without fully explaining risks.",
+      machine: "A virtual assistant orders products without clear permission.",
+    },
   },
   {
-    "category": "AP",
-    "name": "Justice",
-    "definition": "Treat others fairly and equitably.",
-    "human": "Treating people equitably and without discrimination.",
-    "organizational": "Ensuring policies and resource allocations are fair and do not disadvantage groups.",
-    "professional": "Delivering services impartially regardless of clients' background or status.",
-    "machine": "Designing algorithms that are fair and unbiased across different groups.",
-    "failureModes": {
-      "human": "A person discriminates against others based on race or gender.",
-      "organizational": "A company pays employees differently for the same work based on discriminatory factors.",
-      "professional": "An expert favours certain clients due to bias.",
-      "machine": "A hiring algorithm systematically ranks candidates from certain backgrounds lower."
-    }
+    category: "CAT",
+    name: "Fairness",
+    definition: "Ensure benefits, risks and costs are distributed equitably.",
+    human: "Treat people equally regardless of background and advocate for fairness.",
+    organizational: "Implement fair hiring, accessible products and equal service quality.",
+    professional: "Provide unbiased advice and equitable access to services.",
+    machine: "Train on diverse datasets to avoid discriminatory outcomes.",
+    failureModes: {
+      human: "A manager promotes only those who share personal interests.",
+      organizational: "Offering premium services only to affluent neighbourhoods.",
+      professional: "Providing a weaker defence for a client who can’t pay a high fee.",
+      machine: "A facial‑recognition system with higher error rates for minority groups.",
+    },
   },
   {
-    "category": "AP",
-    "name": "Accountability",
-    "definition": "Be responsible for actions and decisions.",
-    "human": "Owning up to mistakes and accepting consequences.",
-    "organizational": "Having clear structures for responsibility and auditing actions.",
-    "professional": "Adhering to codes of conduct and taking responsibility for professional work.",
-    "machine": "Ensuring that system outputs are traceable and that there is oversight over autonomous decisions.",
-    "failureModes": {
-      "human": "Blaming others instead of accepting responsibility for harm caused.",
-      "organizational": "A corporation hides behind complex structures to avoid responsibility for wrongdoing.",
-      "professional": "An expert evades liability for flawed advice.",
-      "machine": "An opaque AI system makes harmful decisions with no one accountable."
-    }
+    category: "CAT",
+    name: "Reliability",
+    definition: "Be trustworthy, honour promises and remain loyal.",
+    human: "Keeping commitments to friends, family and community.",
+    organizational: "Staying faithful to mission statements and stakeholder trust.",
+    professional: "Maintaining confidentiality and working in clients’ best interests.",
+    machine: "Operating as advertised and protecting user data.",
+    failureModes: {
+      human: "Breaking a promise to help someone on an important day.",
+      organizational: "Selling user data despite a privacy promise.",
+      professional: "Embezzling client funds.",
+      machine: "A cloud service fails to secure user data, leading to a breach.",
+    },
   },
   {
-    "category": "AP",
-    "name": "Transparency",
-    "definition": "Operate openly and be transparent about actions and reasoning.",
-    "human": "Being honest and clear about intentions and reasons for actions.",
-    "organizational": "Communicating decisions and processes openly with stakeholders.",
-    "professional": "Explaining methods and reasoning to clients and peers.",
-    "machine": "Providing interpretable models and explanations for system outputs.",
-    "failureModes": {
-      "human": "Deceiving others or hiding information to manipulate outcomes.",
-      "organizational": "Keeping critical business decisions secret from affected stakeholders.",
-      "professional": "An expert uses jargon and obscurity to avoid scrutiny.",
-      "machine": "A black-box AI whose decisions cannot be understood or challenged."
-    }
-  }
+    category: "CAT",
+    name: "Truthfulness",
+    definition: "Commit to honesty and transparency.",
+    human: "Communicate truthfully and avoid intentional misdirection.",
+    organizational: "Be open about business practices, successes and failures.",
+    professional: "Provide complete and honest assessments even when the news is bad.",
+    machine: "Supply accurate information and communicate limitations clearly.",
+    failureModes: {
+      human: "Lying on a résumé.",
+      organizational: "Hiding known defects from customers.",
+      professional: "Falsifying research results.",
+      machine: "Generating convincing but false news articles.",
+    },
+  },
 ];
